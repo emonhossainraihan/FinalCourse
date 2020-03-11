@@ -1,0 +1,19 @@
+---
+title: "Optimization MTH-308"
+author: "Emon Hossain"
+date: "3/12/2020"
+output: html_document
+---
+
+## convex set 
+- **Affine subspace**
+$S\subseteq \mathbb{R}$ is an affine subspace of $\mathbb{R}^n$ if $S=p+V$ for some $p\in \mathbb{R}^n$ and a vector subspace $V$ of $\mathbb{R}^n$
+<span style="color:red">A Affine subspace is simply a vector subspace translated</span>. Examples
+    1. a single element of $\mathbb{R}^n$ form an affine subspace.
+    2. If $A\in\mathbb{R}^{m\times n},b\in\mathbb{R}^m$, then $\{x\in\mathbb{R}^n:Ax=b\}$ is an affine subspace if it is nonempty. Let $x^1$ be a solution to $Ax=b$. Then $S=x^1+N$ where $N$ is null space of $A$.
+- **Affine hull**
+Given $S\subseteq\mathbb{R}^n$, the affine hull of $S$ is the intersection of all affine subspaces containing $S$. Given $v^1,v^2,\cdots,v^k\in\mathbb{R}^n$ and $c_1,c_2,\cdots,c_k\in\mathbb{R}$ such that $c_1,c_2,\cdots,c_k=1$, then $c_1v^1+c_2v^2+\cdots,+c_kv^k\text{ is an affine combination}$. The affine hull of $S\subseteq\mathbb{R}^n$ is given by all possible affine combinations of a finite number of elements of $S$.
+
+Given an affine space $E$, recall that a subset $V$ of $E$ is convex if for any two points $a,b\in V$, we have $c\in V$ for every point $c=(1-\lambda)a+\lambda b$, with $0\leq\lambda\leq1(\lambda\in\mathbb{R})$. The notation $[a,b]$ is often used to denote the line segment between $a$ and $b$, that is,
+$$[a,b]=\{c\in E|c=(1-\lambda)a+\lambda b,0\leq\lambda\leq1\}$$
+and thus, a set $V$ is convex if $[a,b]\subseteq V$ for any two points $a,b\in V(a=b\text{ is allowed})$. The empty set is trivially convex, every one-point set $\{a\}$ is convex, and the entire affine space $E$ is of course convex. <span style="color:red">It is obvious that the intersection of any family (finite orinfinite) of convex sets is convex</span>. Then, given any (nonempty) subset $S$ of $E$, there is a smallest convex set containing $S$ denoted by $\text{conv}(S)$ and called the convex hull of $S$ (namely, the intersection of all convex sets containing $S$). The affine hull of a subset,$S$,of $E$ is the smallest affine set containing $S$ and is denoted by $⟨S⟩\text{or aff}(S)$
