@@ -12,7 +12,7 @@
 <meta name="author" content="Emon Hossain" />
 
 
-<title>About</title>
+<title>Optimization</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -293,21 +293,32 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">About</h1>
+<h1 class="title toc-ignore">Optimization</h1>
 <h4 class="author">Emon Hossain</h4>
-<h4 class="date">4/13/2020</h4>
+<h4 class="date">3/12/2020</h4>
 
 </div>
 
 
-<div class="figure">
-<img src="https://i.imgur.com/B4n7Wbut.jpg" alt="picture" />
-<p class="caption">picture</p>
+<div id="contents" class="section level2">
+<h2>contents:</h2>
+<ul>
+<li><a href="#mth-208">MTH-208</a> ## MTH-308</li>
+<li><a href="https://math.dartmouth.edu/~m126w18/pdf/part1.pdf">convex</a></li>
+</ul>
 </div>
-<blockquote>
-<p>My World In Numbers, My World In Fractals</p>
-</blockquote>
-<p>Still a undergraduate student in Mathematics of Dhaka University who also occasionally teaches problem-solving and other fun math to high school students. Highly interested in web development and data science. My math.stackexchange profile is <a href="https://math.stackexchange.com/users/565609/emonhr?tab=profile">Here</a> <strong>Everything that we think about ourselves is less than what we actually have inside us.</strong></p>
+<div id="convex-set" class="section level2">
+<h2>convex set</h2>
+<ul>
+<li><strong>Affine subspace</strong> <span class="math inline">\(S\subseteq \mathbb{R}\)</span> is an affine subspace of <span class="math inline">\(\mathbb{R}^n\)</span> if <span class="math inline">\(S=p+V\)</span> for some <span class="math inline">\(p\in \mathbb{R}^n\)</span> and a vector subspace <span class="math inline">\(V\)</span> of <span class="math inline">\(\mathbb{R}^n\)</span> <span style="color:red">A Affine subspace is simply a vector subspace translated</span>. Examples
+<ol style="list-style-type: decimal">
+<li>a single element of <span class="math inline">\(\mathbb{R}^n\)</span> form an affine subspace.</li>
+<li>If <span class="math inline">\(A\in\mathbb{R}^{m\times n},b\in\mathbb{R}^m\)</span>, then <span class="math inline">\(\{x\in\mathbb{R}^n:Ax=b\}\)</span> is an affine subspace if it is nonempty. Let <span class="math inline">\(x^1\)</span> be a solution to <span class="math inline">\(Ax=b\)</span>. Then <span class="math inline">\(S=x^1+N\)</span> where <span class="math inline">\(N\)</span> is null space of <span class="math inline">\(A\)</span>.</li>
+</ol></li>
+<li><strong>Affine hull</strong> Given <span class="math inline">\(S\subseteq\mathbb{R}^n\)</span>, the affine hull of <span class="math inline">\(S\)</span> is the intersection of all affine subspaces containing <span class="math inline">\(S\)</span>. Given <span class="math inline">\(v^1,v^2,\cdots,v^k\in\mathbb{R}^n\)</span> and <span class="math inline">\(c_1,c_2,\cdots,c_k\in\mathbb{R}\)</span> such that <span class="math inline">\(c_1,c_2,\cdots,c_k=1\)</span>, then <span class="math inline">\(c_1v^1+c_2v^2+\cdots,+c_kv^k\text{ is an affine combination}\)</span>. The affine hull of <span class="math inline">\(S\subseteq\mathbb{R}^n\)</span> is given by all possible affine combinations of a finite number of elements of <span class="math inline">\(S\)</span>.</li>
+</ul>
+<p>Given an affine space <span class="math inline">\(E\)</span>, recall that a subset <span class="math inline">\(V\)</span> of <span class="math inline">\(E\)</span> is convex if for any two points <span class="math inline">\(a,b\in V\)</span>, we have <span class="math inline">\(c\in V\)</span> for every point <span class="math inline">\(c=(1-\lambda)a+\lambda b\)</span>, with <span class="math inline">\(0\leq\lambda\leq1(\lambda\in\mathbb{R})\)</span>. The notation <span class="math inline">\([a,b]\)</span> is often used to denote the line segment between <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span>, that is, <span class="math display">\[[a,b]=\{c\in E|c=(1-\lambda)a+\lambda b,0\leq\lambda\leq1\}\]</span> and thus, a set <span class="math inline">\(V\)</span> is convex if <span class="math inline">\([a,b]\subseteq V\)</span> for any two points <span class="math inline">\(a,b\in V(a=b\text{ is allowed})\)</span>. The empty set is trivially convex, every one-point set <span class="math inline">\(\{a\}\)</span> is convex, and the entire affine space <span class="math inline">\(E\)</span> is of course convex. <span style="color:red">It is obvious that the intersection of any family (finite orinfinite) of convex sets is convex</span>. Then, given any (nonempty) subset <span class="math inline">\(S\)</span> of <span class="math inline">\(E\)</span>, there is a smallest convex set containing <span class="math inline">\(S\)</span> denoted by <span class="math inline">\(\text{conv}(S)\)</span> and called the convex hull of <span class="math inline">\(S\)</span> (namely, the intersection of all convex sets containing <span class="math inline">\(S\)</span>). The affine hull of a subset,<span class="math inline">\(S\)</span>,of <span class="math inline">\(E\)</span> is the smallest affine set containing <span class="math inline">\(S\)</span> and is denoted by <span class="math inline">\(⟨S⟩\text{or aff}(S)\)</span></p>
+</div>
 
 
 

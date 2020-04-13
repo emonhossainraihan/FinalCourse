@@ -9,9 +9,10 @@
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
+<meta name="author" content="Emon Hossain" />
 
 
-<title>Optimization</title>
+<title>Topology</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -267,15 +268,18 @@ $(document).ready(function () {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html">My Website</a>
+      <a class="navbar-brand" href="index.html">3rd year</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
-  <a href="index.html">Home</a>
+  <a href="index.html">About</a>
 </li>
 <li>
-  <a href="about.html">About</a>
+  <a href="topology.html">Topology</a>
+</li>
+<li>
+  <a href="optimization.html">Optimization</a>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -289,13 +293,47 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Optimization</h1>
+<h1 class="title toc-ignore">Topology</h1>
+<h4 class="author">Emon Hossain</h4>
+<h4 class="date">13/04/2020</h4>
 
 </div>
 
 
-<div id="about-my-course-mth-308-optimization" class="section level1">
-<h1>About my course MTH-308 (Optimization)</h1>
+<div id="notes-for-final-mth-309" class="section level2">
+<h2>Notes for final (MTH-309)</h2>
+<p>A <a href="https://math.stackexchange.com/q/21313/565609">metric space</a> has a notion of distance, while a topological space only has a notion of closeness. If we have a notion of distance then we can say when things are close to each other. However, distance is not necessary to determine when things are close to each other.</p>
+</div>
+<div id="what-does-open-set-mean-in-the-concept-of-a-topology" class="section level2">
+<h2><a href="https://math.stackexchange.com/q/2152735/565609">What does “open set” mean in the concept of a topology?</a></h2>
+<p>Here is an interesting intuitive definition for <strong>open set</strong> that actually gives rise to the topological axioms!</p>
+<blockquote>
+<p>An <strong>open set</strong> is a collection of objects for which we can easily verify membership of any given member.</p>
+</blockquote>
+<blockquote>
+<p>Note that it may not be easy to verify non-membership of non-members!</p>
+</blockquote>
+<p>Now let us take a look at the axioms:</p>
+<blockquote>
+<p><strong>The empty collection is an open set.</strong></p>
+</blockquote>
+<blockquote>
+<p>Vacuously true since it has no members.</p>
+</blockquote>
+<blockquote>
+<p><strong>Any finite intersection of open sets is an open set.</strong></p>
+</blockquote>
+<blockquote>
+<p>True because you just verify membership in each open set one at a time.</p>
+</blockquote>
+<blockquote>
+<p><strong>Any union of open sets is an open set.</strong></p>
+</blockquote>
+<blockquote>
+<p>True because for each member in the union you just have to verify its membership in the correct open set of the union.</p>
+</blockquote>
+<p>Notice how the restriction to “<strong>finite</strong> intersection” is crucial here because we may not be able to easily verify membership in infinitely many open sets! Here we are using the intuitive assumption that it is easy to do finitely many easy tasks.</p>
+<p>Now of course one can ask whether there is a concrete representation of such intuitive notion of open sets. There is! In a metric space, suppose that you interpret that membership of <span class="math inline">\(x\)</span> in <span class="math inline">\(S\)</span> is easily verified iff there is some positive error margin <span class="math inline">\(ε\)</span> such that moving <span class="math inline">\(x\)</span> by a distance of at most <span class="math inline">\(ε\)</span> cannot make it no longer a member of <span class="math inline">\(S\)</span>. Then indeed you can easily verify that metric-open sets have easily verifiable membership, and you can see why infinite intersections of metric-open sets may not be open (since those sets may require smaller and smaller error margins for that member).</p>
 </div>
 
 

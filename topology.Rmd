@@ -1,0 +1,36 @@
+---
+title: "Topology"
+author: "Emon Hossain"
+date: "13/04/2020"
+output: html_document
+---
+## Notes for final (MTH-309)
+
+
+A [metric space](https://math.stackexchange.com/q/21313/565609) has a notion of distance, while a topological space only has a notion of closeness. If we have a notion of distance then we can say when things are close to each other. However, distance is not necessary to determine when things are close to each other.
+
+## [What does "open set" mean in the concept of a topology?](https://math.stackexchange.com/q/2152735/565609)
+
+Here is an interesting intuitive definition for **open set** that actually gives rise to the topological axioms!
+
+>An **open set** is a collection of objects for which we can easily verify membership of any given member.
+
+>Note that it may not be easy to verify non-membership of non-members!
+
+Now let us take a look at the axioms:
+
+>**The empty collection is an open set.**
+
+>Vacuously true since it has no members.
+
+>**Any finite intersection of open sets is an open set.**
+
+>True because you just verify membership in each open set one at a time.
+
+> **Any union of open sets is an open set.**
+
+>True because for each member in the union you just have to verify its membership in the correct open set of the union.
+
+Notice how the restriction to "**finite** intersection" is crucial here because we may not be able to easily verify membership in infinitely many open sets! Here we are using the intuitive assumption that it is easy to do finitely many easy tasks.
+
+Now of course one can ask whether there is a concrete representation of such intuitive notion of open sets. There is! In a metric space, suppose that you interpret that membership of $x$ in $S$ is easily verified iff there is some positive error margin $ε$ such that moving $x$ by a distance of at most $ε$ cannot make it no longer a member of $S$. Then indeed you can easily verify that metric-open sets have easily verifiable membership, and you can see why infinite intersections of metric-open sets may not be open (since those sets may require smaller and smaller error margins for that member).

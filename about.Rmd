@@ -1,5 +1,0 @@
----
-title: "Optimization"
----
-
-Here I will add my notes which I create for 3rd year course final.

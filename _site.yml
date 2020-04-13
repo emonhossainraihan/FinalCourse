@@ -1,8 +1,10 @@
-name: "my-website"
+name: "3rd Year Notes"
 navbar:
   title: "3rd year"
   left:
-    - text: "Optimization"
-      href: index.html
     - text: "About"
-      href: about.html
+      href: index.html
+    - text: "Topology"
+      href: topology.html
+    - text: "Optimization"
+      href: optimization.html
